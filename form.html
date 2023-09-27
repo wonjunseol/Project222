@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>휴대폰 기종</legend>
+            <label for="name">휴대폰 기종 이름</label>
+            <input type="text" name="name" /><br />
+
+            <label for="brand">브랜드</label>
+            <input type='radio' name='brand' value='iphone' />아이폰
+            <input type='radio' name='brand' value='galaxy' />갤럭시
+            <input type='radio' name='brand' value='other' />그 외<br />
+
+            <label for="buy">구매 날짜</label>
+            <input type="date" /><br />
+
+            <label for="major">교체하고싶은 휴대폰 기종</label>
+            <select>
+                <optgroup label="아이폰">
+                    <option value="iphone">아이폰12Pro</option>
+                    <option value="iphone">아이폰13Pro</option>
+                    <option value="iphone">아이폰14Pro</option>
+                </optgroup>
+                <optgroup label="갤럭시">
+                    <option value="galaxy">갤럭시s24</option>
+                    <option value="galaxy">갤럭시Z플립3</option>
+                    <option value="galaxy">갤럭시노트20</option>
+                </optgroup>
+            </select><br />
+
+            <label for="used">써본 기종들</label>
+            <input type="checkbox" name="used" value="1" />아이폰 12시리즈
+            <input type="checkbox" name="used" value="2" />아이폰 13시리즈
+            <input type="checkbox" name="used" value="3" />갤럭시 s시리즈
+            <input type="checkbox" name="used" value="4" />갤럭시 노트시리즈
+            <input type="checkbox" name="used" value="5" />그 외<br>
+
+            <label for="introduction">교체하고싶은 이유</label>
+            <textarea name="introduction" cols="50" rows="4"></textarea><br />
+
+            <label for="color">가장 좋아하는 휴대폰 색상</label>
+            <input type="color" name="color" />
+            
+        </fieldset>
+        <form action="submit.php" method="post">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </form>
+</body>
+</html>
